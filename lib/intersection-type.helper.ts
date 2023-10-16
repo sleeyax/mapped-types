@@ -1,11 +1,10 @@
-import { Type } from '@nestjs/common';
-
 import { MappedType } from './mapped-type.interface';
 import {
   inheritPropertyInitializers,
   inheritTransformationMetadata,
   inheritValidationMetadata,
 } from './type-helpers.utils';
+import { Type } from './types/common';
 import { RemoveFieldsWithType } from './types/remove-fields-with-type.type';
 
 // https://stackoverflow.com/questions/50374908/transform-union-type-to-intersection-type

@@ -1,4 +1,3 @@
-import { Type } from '@nestjs/common';
 import { MappedType } from './mapped-type.interface';
 import {
   applyIsOptionalDecorator,
@@ -6,6 +5,7 @@ import {
   inheritTransformationMetadata,
   inheritValidationMetadata,
 } from './type-helpers.utils';
+import { Type } from './types/common';
 import { RemoveFieldsWithType } from './types/remove-fields-with-type.type';
 
 export function PartialType<T>(classRef: Type<T>) {
